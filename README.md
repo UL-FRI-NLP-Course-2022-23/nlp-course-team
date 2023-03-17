@@ -1,8 +1,8 @@
-# Natural language processing course 2022/23: `Put name of your project here`
+# Natural language processing course 2022/23: `Project 3: Paraphrasing sentences`
 
 Team members:
- * `MEMBER FULL NAME`, `STUDENT ID`, `STUDENT E-MAIL`
- * `MEMBER FULL NAME`, `STUDENT ID`, `STUDENT E-MAIL`
+ * `Matej Vatovec`, `63190310`, `mv6299@student.uni-lj.si`
+ * `Rok Cek`, `STUDENT ID`, `STUDENT E-MAIL`
  * `MEMBER FULL NAME`, `STUDENT ID`, `STUDENT E-MAIL`
  
 Group public acronym/name: `THINK OF PUBLIC STRING FOR YOUR GROUP`

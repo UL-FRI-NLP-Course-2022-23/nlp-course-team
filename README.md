@@ -2,7 +2,7 @@
 
 Team members:
  * `Matej Vatovec`, `63190310`, `mv6299@student.uni-lj.si`
- * `Rok Cek`, `STUDENT ID`, `STUDENT E-MAIL`
+ * `Rok Cek`, `63190074`, `rc2136@student.uni-lj.si`
  * `MEMBER FULL NAME`, `STUDENT ID`, `STUDENT E-MAIL`
  
 Group public acronym/name: `THINK OF PUBLIC STRING FOR YOUR GROUP`

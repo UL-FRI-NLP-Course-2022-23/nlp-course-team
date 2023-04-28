@@ -19,6 +19,7 @@ class Google_translator:
         self.lock = threading.Lock()
         self.max_workers = 8
         self.separator = "~"
+        self.chunk = 1000
         if not os.path.isfile("./../Data/gigafida_translated.csv"):
             f = open(self.translated_file, "w", encoding="utf-8")
             f.write("Fid" + self.separator +"Sid" +self.separator +"Text\n")
@@ -99,7 +100,7 @@ class Google_translator:
                             done2 = True
                         except Exception as er:
                             print("error :", f, i, er)
-                            time.sleep(5)
+                            time.sleep(1)
                 with self.lock:
                     print("Writing: ", f, len(sentences))
                     self.write_arrays(sentences, translated_sentences, f)
@@ -118,7 +119,7 @@ class Google_translator:
 
 
 def main():
-    google_translator = Google_translator(0, 31722 //2)
+    google_translator = Google_translator(0, 31722 //4)
     google_translator.translate_all_multithread()
 
 main()

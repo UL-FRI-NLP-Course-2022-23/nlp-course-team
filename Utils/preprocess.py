@@ -25,11 +25,11 @@ def read_csv(file):
 def combine(original, translated):
     if original[["Fid", "Sid"]].equals(translated[["Fid", "Sid"]]):
         combined = pd.DataFrame()
-        combined["original"] = original["Text"]
-        combined["translated"] = translated["Text"]
+        combined["input_text"] = original["Text"]
+        combined["target_text"] = translated["Text"]
         return combined
     else:
         raise Exception("Error, sentences are not correctly aligned. More preprocessing is needed.")
     
 def remove_same_translations(data):
-    return data[data.original != data.translated]
+    return data[data.input_text != data.target_text]

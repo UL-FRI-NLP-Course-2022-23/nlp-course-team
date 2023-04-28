@@ -32,6 +32,9 @@ args = {
 
 data = preprocess.combine(preprocess.read_csv("./Data/gigafida_original.csv"), preprocess.read_csv("./Data/gigafida_translated.csv"))
 data = preprocess.remove_same_translations(data)
+data["prefix"] = "paraphrase"
 train_data,test_data = train_test_split(data,test_size=0.1)
-print("Train")
+print("Definition")
 model = T5Model("t5","t5-small", args=args)
+print("Train")
+model.train_model(train_data, eval_data=test_data, use_cuda=True,acc=sklearn.metrics.accuracy_score)

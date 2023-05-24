@@ -1,0 +1,11 @@
+transformers
+datasets
+sklern
+pandas
+numpy
+nltk
+simpletransformers
+bs4
+googletrans
+rouge_score
+tqdm
